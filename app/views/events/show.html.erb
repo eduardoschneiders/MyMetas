@@ -1,0 +1,8 @@
+<h1><%= @event.title%></h1>
+<%= link_to "back", events_path %>
+<div class="details">
+	<div class="description"><%= @event.description %></div>
+	<div class="where"><%= @event.where %></div>
+	<div class="starts_at"><%= formatDate @event.starts_at %></div>
+	<div class="ends_at"><%= formatDate @event.ends_at %></div>
+</div>
